@@ -4,7 +4,9 @@
   "description": "A tiny wiki.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node mef.js",
+    "start": "node mefa.js"
   },
   "repository": {
     "type": "git",
