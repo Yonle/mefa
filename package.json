@@ -1,0 +1,27 @@
+{
+  "name": "mefa",
+  "version": "1.0.0",
+  "description": "A tiny wiki.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@git.sr.ht/~yonle/mefa.git"
+  },
+  "keywords": [
+    "wiki"
+  ],
+  "author": "Yonle <yonle@duck.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://todo.sr.ht/~yonle/mefa"
+  },
+  "homepage": "https://git.sr.ht/~yonle/mefa#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "markdown": "^0.5.0"
+  }
+}
