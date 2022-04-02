@@ -1,4 +1,4 @@
-const m = require("markdown").markdown.toHTML;
+const m = require("markdown-it")();
 const e = require("express");
 const f = require("fs");
 const a = e();
@@ -24,7 +24,7 @@ a.get("/:p", (q, s) => {
 	s.render("index",
 		{
 			t: q.params.p,
-			c: m(
+			c: m.render(
 				f.readFileSync(__dirname + "/pages/" + q.params.p + ".md", "utf8")
 			)
 		}

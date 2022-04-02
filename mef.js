@@ -1,4 +1,4 @@
-const m = require("markdown").markdown.toHTML;
+const m = require("markdown-it")();
 const e = require("ejs");
 const f = require("fs");
 
@@ -19,7 +19,7 @@ f.readdirSync(__dirname + "/pages")
 		f.writeFileSync(__dirname + "/dist/" + t + "/index.html",
 			await e.renderFile(__dirname + "/views/index.ejs", {
 				t,
-				c: m(
+				c: m.render(
 					f.readFileSync(__dirname + "/pages/" + t + ".md", "utf8")
 				) 	
 			}), {
