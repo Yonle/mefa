@@ -1,7 +1,7 @@
 {
   "name": "mefa",
   "version": "1.0.0",
-  "description": "A tiny wiki.",
+  "description": "A tiny markdown site.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
