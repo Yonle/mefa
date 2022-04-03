@@ -27,10 +27,9 @@ pre, code {
 }
 
 table, td {
-	border: 1px solid #333;
+	border: 1px solid black;
 }
 
-thead {
-	background-color: #333;
-	color: #fff;
+thead, th {
+	border: 1px solid black;
 }
